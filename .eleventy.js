@@ -6,7 +6,7 @@ const {AssetCache} = require("@11ty/eleventy-cache-assets");
 
 
 module.exports = async function(eleventyConfig, config) {
-    const { queries = [{varName: 'allData', query: '*[]'}], projectId, cdn = true, dataset = "production" } = config
+    const { queries = [{varName: 'allData', query: '*[]'}], projectId, cdn = true, dataset = "production", cacheDuration = '1d' } = config
     if (projectId == null) return console.assert(projectId != null, '\x1b[31m No project Id was specified')
     
     const client = sanityClient({
@@ -22,7 +22,7 @@ module.exports = async function(eleventyConfig, config) {
                 let asset = new AssetCache(item.varName);
                 console.log('asset check', {asset})
 
-                if(asset.isCacheValid("1d")) {
+                if(asset.isCacheValid(cacheDuration)) {
                     // return cached data.
 
                     console.log(asset.getCachedValue())

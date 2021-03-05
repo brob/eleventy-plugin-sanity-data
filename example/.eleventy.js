@@ -1,5 +1,5 @@
-const sanityData = require("../.eleventy.js");
-
+// const sanityData = require("../.eleventy.js");
+const sanityData = require("eleventy-plugin-sanity-data")
 
 module.exports = function(config) {
 
