@@ -1,0 +1,19 @@
+{
+  "name": "eleventy-plugin-sanity-data",
+  "version": "0.0.1",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0-canary.10",
+    "@11ty/eleventy-cache-assets": "^2.1.0",
+    "@sanity/block-content-to-markdown": "0.0.5",
+    "@sanity/client": "^2.1.4"
+  }
+}
