@@ -10,7 +10,7 @@
   "dependencies": {
     "@11ty/eleventy": "^1.0.0-canary.10",
     "@11ty/eleventy-cache-assets": "^2.1.0",
-    "eleventy-plugin-sanity-data": "^0.0.1"
+    "eleventy-plugin-sanity-data": "^0.0.2"
   },
   "keywords": [],
   "author": "",
